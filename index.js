@@ -205,10 +205,10 @@ class ProjectManager extends Instructor{
     this.gradClassName = proManager.gradClassName;
     this.favInstructor = proManager.favInstructor;
   }
-  standup (slack) {
-    return `${this.name} announces to ${this.channel}, @channel standy times!`
+  standUp (channel) {
+    return `${this.name} announces to ${channel}, @channel standy times!`
   }
-  deBugsCode (student, subject) {
+  debugsCode (student, subject) {
     return `${this.name} debugs ${student.name}'s code on ${subject}`
   }
 
