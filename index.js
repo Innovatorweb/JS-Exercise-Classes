@@ -173,7 +173,7 @@ class Student extends Lambdasian{
       this.previousBackground = classLambda.previousBackground;
       this.className = classLambda.className;
       this.favSubjects = classLambda.favSubjects;    
-    
+  }
     listSubjects () {
       return `Loving ${this.favSubjects}!`
     }
@@ -184,7 +184,7 @@ class Student extends Lambdasian{
       return `${this.name} has begun spring challenge on ${subject}`
     }
   }
-}
+
 
 /*
   TASK 6
@@ -206,7 +206,7 @@ class ProjectManager extends Instructor{
     this.favInstructor = proManager.favInstructor;
   }
   standup (slack) {
-    return `$this.name announces to $channel, @channel standy times!`
+    return `${this.name} announces to ${this.channel}, @channel standy times!`
   }
   deBugsCode (student, subject) {
     return `${this.name} debugs ${student.name}'s code on ${subject}`
